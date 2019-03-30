@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package errors;
+option go_package = "github.com/nilorg/protobuf/errors";
+option csharp_namespace = "Nilorg.Protobuf.Errors";
+
+// BusinessError 业务错误
+message BusinessError {
+    // 错误代码
+    uint32 code = 1;
+    // 错误消息
+    string msg = 2;
+}
