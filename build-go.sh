@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 输出目录
-GO_PUT_PATH='../'
+GO_PUT_PATH='./'
 
 # 定义服务数组
 services=(
