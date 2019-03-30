@@ -1,8 +1,13 @@
 syntax = "proto3";
 
-package errors;
+package nilorg.protobuf.errors;
+
 option go_package = "github.com/nilorg/protobuf/errors";
 option csharp_namespace = "Nilorg.Protobuf.Errors";
+
+option java_package = "com.nilorg.protobuf.errors";
+option java_outer_classname = "BusinessError";
+option java_multiple_files = true;
 
 // BusinessError 业务错误
 message BusinessError {
