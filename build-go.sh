@@ -8,6 +8,6 @@ services=(
 './errors/*.proto'
 )
 
-for item in "${services}" ; do
+for item in "${services[@]}" ; do
 protoc --go_out=paths=source_relative:$GO_PUT_PATH $item
 done
