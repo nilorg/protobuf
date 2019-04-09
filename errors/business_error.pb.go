@@ -33,7 +33,7 @@ func (m *BusinessError) Reset()         { *m = BusinessError{} }
 func (m *BusinessError) String() string { return proto.CompactTextString(m) }
 func (*BusinessError) ProtoMessage()    {}
 func (*BusinessError) Descriptor() ([]byte, []int) {
-	return fileDescriptor_business_error_6a37f19d4bb61f80, []int{0}
+	return fileDescriptor_business_error_e6a9bf6c0b9e8420, []int{0}
 }
 func (m *BusinessError) XXX_Unmarshal(b []byte) error {
 	return xxx_messageInfo_BusinessError.Unmarshal(m, b)
@@ -72,10 +72,10 @@ func init() {
 }
 
 func init() {
-	proto.RegisterFile("errors/business_error.proto", fileDescriptor_business_error_6a37f19d4bb61f80)
+	proto.RegisterFile("errors/business_error.proto", fileDescriptor_business_error_e6a9bf6c0b9e8420)
 }
 
-var fileDescriptor_business_error_6a37f19d4bb61f80 = []byte{
+var fileDescriptor_business_error_e6a9bf6c0b9e8420 = []byte{
 	// 162 bytes of a gzipped FileDescriptorProto
 	0x1f, 0x8b, 0x08, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0xff, 0xe2, 0x92, 0x4e, 0x2d, 0x2a, 0xca,
 	0x2f, 0x2a, 0xd6, 0x4f, 0x2a, 0x2d, 0xce, 0xcc, 0x4b, 0x2d, 0x2e, 0x8e, 0x07, 0xf3, 0xf5, 0x0a,

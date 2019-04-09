@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package nilorg.protobuf.paging;
+
+option go_package = "github.com/nilorg/protobuf/paging";
+option csharp_namespace = "Nilorg.Protobuf.Paging";
+
+option java_package = "com.nilorg.protobuf.paging";
+option java_outer_classname = "Pagination";
+option java_multiple_files = true;
+
+// Pagination 标记页数
+message Pagination {
+    // 当前页
+    uint32 page_no = 1;
+    // 页大小
+    uint32 page_size = 2;
+}

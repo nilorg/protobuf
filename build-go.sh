@@ -6,6 +6,7 @@ GO_PUT_PATH='./'
 # 定义服务数组
 services=(
 './errors/*.proto'
+'./paging/*.proto'
 )
 
 for item in "${services[@]}" ; do
