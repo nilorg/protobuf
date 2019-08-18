@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package nilorg.protobuf.job;
+option go_package = "github.com/nilorg/protobuf/job";
+option csharp_namespace = "Nilorg.Protobuf.Job";
+
+import "google/protobuf/any.proto";
+import "nilorg/protobuf/errors/business_error.proto";
+
+// TaskService 任务服务服务
+service TaskService {
+    // Execute 执行
+    rpc Execute (ExecuteRequest) returns (ExecuteResponse);
+    // ExecuteAsync 执行异步
+    rpc ExecuteAsync (ExecuteRequest) returns (ExecuteResponse);
+}
+
+// ExecuteRequest 执行请求
+message ExecuteRequest {
+    // 任务ID
+   string taskId = 1;
+   google.protobuf.Any body = 2;
+}
+
+// ExecuteResponse 执行请求响应
+message ExecuteResponse {
+    google.protobuf.Any body = 1;
+    nilorg.protobuf.errors.BusinessError err = 2;
+}
