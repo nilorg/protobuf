@@ -9,3 +9,5 @@ require (
 	google.golang.org/genproto v0.0.0-20190817000702-55e96fffbd48 // indirect
 	google.golang.org/grpc v1.23.0
 )
+
+go 1.13
