@@ -15,4 +15,6 @@ message Pagination {
     uint32 page_no = 1;
     // 页大小
     uint32 page_size = 2;
+    // 总数
+    uint64 total = 3;
 }
