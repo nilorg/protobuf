@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package nilorg.protobuf.dictionary;
+
+option go_package = "github.com/nilorg/protobuf/dictionary";
+option csharp_namespace = "Nilorg.Protobuf.Dictionary";
+
+option java_package = "com.nilorg.protobuf.dictionary";
+option java_outer_classname = "Dictionary";
+option java_multiple_files = true;
+
+message Dictionary {
+    string code = 1;
+    string name = 2;
+}

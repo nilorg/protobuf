@@ -7,6 +7,7 @@ GO_PUT_PATH='./'
 services=(
 './errors/*.proto'
 './paging/*.proto'
+'./dictionary/*.proto'
 )
 
 for item in "${services[@]}" ; do
