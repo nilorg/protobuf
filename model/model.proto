@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package nilorg.protobuf.model;
+
+option go_package = "github.com/nilorg/protobuf/model";
+option csharp_namespace = "Nilorg.Protobuf.Model";
+
+option java_package = "com.nilorg.protobuf.Model";
+option java_outer_classname = "Pagination";
+option java_multiple_files = true;
+
+message Model {
+    int64 id = 1;
+    string name = 2;
+}

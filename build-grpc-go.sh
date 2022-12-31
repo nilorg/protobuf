@@ -8,6 +8,7 @@ services=(
 './errors/*.proto'
 './paging/*.proto'
 './dictionary/*.proto'
+'./model/*.proto'
 )
 
 for item in "${services[@]}" ; do
