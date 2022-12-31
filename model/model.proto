@@ -10,6 +10,6 @@ option java_outer_classname = "Pagination";
 option java_multiple_files = true;
 
 message Model {
-    int64 id = 1;
+    string id = 1;
     string name = 2;
 }
