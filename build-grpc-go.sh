@@ -12,5 +12,5 @@ services=(
 )
 
 for item in "${services[@]}" ; do
-protoc --go_out=paths=source_relative:$GO_PUT_PATH $item
+~/develop/protoc/33.4/bin/protoc --go_out=paths=source_relative:$GO_PUT_PATH $item
 done
